@@ -20,7 +20,7 @@ The main two data sources used are query and clicks data.
 |capture dry carpet cleaner|14-3fcy4vy4n7-n86       |1  |1     |0          |0     |
 +--------------------------+------------------------+---+------+-----------+------+
 ```
-- The query dataframe contains the results of the items relevance scoring given a query. Below a sample of query dataframe:
+- The query dataframe contains the results of the items relevance scoring given a query. Below a sample of query dataframe and its schema:
 ```
 +------------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |items                                                                                                                         |query                     |
