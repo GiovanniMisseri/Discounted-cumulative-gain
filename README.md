@@ -82,7 +82,7 @@ Here is an example of command line launch for the script:
 python /content/drive/MyDrive/rank_click_nDCG.py --path_clicks '/content/code test/clicks_data' --path_query '/content/code test/query.json' --rows_ndcg 10 --output_path_rank_query '/content/code test/output/rank_query' --output_path_nDCG '/content/code test/output/nDCG'
 ```
 
-Below an example of the script output:
+Below an example of the script's output:
 ```
 nDCG calculated over the first 10 ranked products
 +--------------------------+-----------------+-----------------+-----------------+
