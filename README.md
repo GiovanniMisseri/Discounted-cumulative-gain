@@ -66,3 +66,18 @@ It is important that:
 
 Bonus:
 - Calculate the average nDCG@10 for the click column
+
+## Solution
+The proposed solution is the python file `rank_click_nDCG.py`.
+
+To use the script there are few arguments to pass:
+    `--path_clicks`: a string containing the path to the clicks_data folder (required)
+    `--path_query`: a string containing the path to the query.json file(required)
+    `--rows_ndcg`: an integer indicating the number of rows to use to calculate nDCG (optional, default is 10)
+    `--output_path_rank_query`: a string containing the path to use for writing the query's interaction ranked table. To notice that the rank is not guaranteed with big query in reading phase (optional)
+    `--output_path_nDCG`: a string containing the path to use for writing the nDCG table (optional)
+
+Here is an example of command line launch for the script:
+```
+python /content/drive/MyDrive/rank_click_nDCG.py --path_clicks '/content/code test/clicks_data' --path_query '/content/code test/query.json' --rows_ndcg 10 --output_path_rank_query '/content/code test/output/rank_query' --output_path_nDCG '/content/code test/output/nDCG'
+```
