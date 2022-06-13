@@ -81,3 +81,37 @@ Here is an example of command line launch for the script:
 ```
 python /content/drive/MyDrive/rank_click_nDCG.py --path_clicks '/content/code test/clicks_data' --path_query '/content/code test/query.json' --rows_ndcg 10 --output_path_rank_query '/content/code test/output/rank_query' --output_path_nDCG '/content/code test/output/nDCG'
 ```
+
+Below an example of the script output:
+```
+nDCG calculated over the first 10 ranked products
++--------------------------+-----------------+-----------------+-----------------+
+|query                     |dcg              |idcg             |ndcg             |
++--------------------------+-----------------+-----------------+-----------------+
+|capture dry carpet cleaner|57.24305999434256|58.60904434021651|0.976693284095461|
++--------------------------+-----------------+-----------------+-----------------+
+
+None
+
+Overview of the interactions given the submitted query
++--------------------------+-----------------------+------------------+---+------+-----------+------+
+|query                     |ivm                    |score             |imp|clicks|add_to_cart|orders|
++--------------------------+-----------------------+------------------+---+------+-----------+------+
+|capture dry carpet cleaner|836143-68128-3000092674|2.0               |55 |52    |16         |10    |
+|capture dry carpet cleaner|15673-68128-500467-705 |1.134082982524361 |0  |0     |0          |0     |
+|capture dry carpet cleaner|18055-68128-3000005244 |1.082411640378537 |10 |9     |0          |0     |
+|capture dry carpet cleaner|2462396-99630-DX5G-BNDL|1.0009327106444963|0  |0     |0          |0     |
+|capture dry carpet cleaner|4883237-82757-FFP4263  |1.00004569976108  |1  |1     |0          |0     |
+|capture dry carpet cleaner|440597-1684-8352       |1.00004569976108  |0  |0     |0          |0     |
+|capture dry carpet cleaner|617329-69384-19X6      |1.00004569976108  |1  |1     |0          |0     |
+|capture dry carpet cleaner|9704-20097-9030411     |1.0000364725567834|0  |0     |0          |0     |
+|capture dry carpet cleaner|2597282-1684-2035M     |1.0000271367325497|0  |0     |0          |0     |
+|capture dry carpet cleaner|1296053-69384-BGDC-21  |1.0000011202543917|0  |0     |0          |0     |
+|capture dry carpet cleaner|2597281-1684-2035A     |1.0               |0  |0     |0          |0     |
++--------------------------+-----------------------+------------------+---+------+-----------+------+
+
+None
+                                                                                
+Saved stats_query_clicks in "/content/code test/output/rank_query"
+Saved nDCG in "/content/code test/output/nDCG"
+```
