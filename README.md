@@ -8,7 +8,7 @@ Here I present a pyspark implementation created for a practical test, due to thi
 
 The main two data sources used are query and clicks data.
 
-    - The clicks dataframe contains the interactions with store objects given a query. Below a sample of clicks dataframe:
+- The clicks dataframe contains the interactions with store objects given a query. Below a sample of clicks dataframe:
 +--------------------------+------------------------+---+------+-----------+------+
 |query                     |ivm                     |imp|clicks|add_to_cart|orders|
 +--------------------------+------------------------+---+------+-----------+------+
@@ -19,7 +19,7 @@ The main two data sources used are query and clicks data.
 |capture dry carpet cleaner|14-3fcy4vy4n7-n86       |1  |1     |0          |0     |
 +--------------------------+------------------------+---+------+-----------+------+
 
-    - The query dataframe contains the results of the items relevance scoring given a query. Below a sample of query dataframe:
+- The query dataframe contains the results of the items relevance scoring given a query. Below a sample of query dataframe:
 
 +------------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |items                                                                                                                         |query                     |
@@ -41,6 +41,7 @@ The main two data sources used are query and clicks data.
 The main goal of this coding exercise is to combine eCommerce product search results data with click-stream logs collected from live search traffic. For each search query sent to search engine (catalog), a list of products is returned as results. Products are visualized on the screen and users interacted with the list by a number of behavioral signals such as impressions, clicks, adds to cart, and orders which are tracked in the click-stream data by counting them for each the product id, labeled as ivm.
 
 Write a pySpark script that merges query and clickstream data to return a ranking table like the following:
+```
 +--------------------------+-----------------------+---------+---+------+-----------+------+
 |query                     |ivm                    |score    |imp|clicks|add_to_cart|orders|
 +--------------------------+-----------------------+---------+---+------+-----------+------+
@@ -56,7 +57,7 @@ Write a pySpark script that merges query and clickstream data to return a rankin
 |capture dry carpet cleaner|1296053-69384-BGDC-21  |1.0000011|0  |0     |0          |0     |
 |capture dry carpet cleaner|2597281-1684-2035A     |1.0      |0  |0     |0          |0     |
 +--------------------------+-----------------------+---------+---+------+-----------+------+
-
+```
 It is important that:
     - The code is object-oriented with well designed classes and clean code 
     - The solution scales to millions of queries and clickstream records
